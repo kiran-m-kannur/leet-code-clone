@@ -23,28 +23,27 @@ const AllProblemsPage = () => {
   return (
     <div id="allproblems">
       <table>
-        <tbody>
-
+        <thead>
           <tr>
-            <th>Title</th>
-            <th>Difficulty</th>
-            <th>Acceptance</th>
+            <th>Name</th>
+            <th>Difficulty Level</th>
+            <th>Acceptance Rate</th>
           </tr>
-
-          {problems.map((prob,index) => (
-            <tr>
-              <Link to={`/problems/:${prob.problemId}`}>
-                <td>{prob.title}</td>
-              </Link>
-              <td className={`${prob.difficulty}`} >{prob.difficulty}</td>
-              <td className={`${prob.difficulty}`} >{prob.acceptance}</td>
+        </thead>
+        <tbody>
+          {problems.map((prob, index) => (
+            <tr key={prob.problemId}>
+              <td>
+                <Link to={`/problems/${prob.problemId}`}>{prob.title}</Link>
+              </td>
+              <td className={`difficulty ${prob.difficulty}`}>{prob.difficulty}</td>
+              <td className={`acceptance ${prob.difficulty}`}>{prob.acceptance}</td>
             </tr>
           ))}
-
         </tbody>
       </table>
     </div>
-  )
+  );
 }
 
 export default AllProblemsPage

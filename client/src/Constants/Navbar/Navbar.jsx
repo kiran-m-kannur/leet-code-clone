@@ -9,14 +9,14 @@ const Navbar = () => {
       <Link to={'/'}>
         <div className="logo-box flex-row"> 
           <img className='logo' src="https://user-images.githubusercontent.com/63964149/152531278-5e01909d-0c2e-412a-8acc-4a06863c244d.png" alt="logo" /> 
-          <p>NeetCode</p>
+          <p>MeetCode</p>
         </div>
       </Link>
       <div className="nav-options">
         <Link to={'/problemset/all/'} >Problems</Link>
       </div>
       <div className="nav-options">
-        <Link to={'/signup'} >Signup</Link>
+        <Link to={'/signup'} >Sign-Up</Link>
       </div>
       <div className="nav-options">
         <Link to={'/login'} >Login</Link>

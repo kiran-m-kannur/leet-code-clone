@@ -1,29 +1,57 @@
+
 #signup {
-    min-height: 100%;
-}
-
-.subform {
-    margin: 1rem;
-    font-family: 'Prompt', sans-serif;;
-}
-
-.signup-form {
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-form {
     width: 70%;
     max-width: 550px;
+    margin: 0 auto;
+    padding: 2rem;
     border: 1px solid grey;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     border-radius: 0.5rem;
-    background: #fffdfd;
+    background: #fff;
+    font-family: "Ubuntu";
     box-shadow: 0 8px 8px -4px lightblue;
-}
+  }
+  
+  .subform {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    font-family: "Ubuntu Mono";
+    border-radius: 0.25rem;
+  } 
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-family: "Ubuntu";
 
-.subform > input {
-    position: absolute;
-    right: 100px;
-    padding: 0.3rem;
-}
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
